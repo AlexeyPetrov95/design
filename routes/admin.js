@@ -6,8 +6,8 @@ router.get('/admin', function(req, res){
 })
 
 router.post('/admin', function(req, res){
-    console.log("Nice");
-    res.send();  
+    console.log("1232");
+    res.send();
 })
 
 module.exports = router;

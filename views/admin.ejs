@@ -7,10 +7,27 @@
     </head>
     <body>
         <main id="main">
-            <div id="form">
-                <form method="post" action="/admin"> 
-                    <input type = "text">
-                </form>
+            <div id="blockForForm">
+                <div class="titleForm"> Administration </div>
+                <section id="formBlock">
+                      <form id="form" method="post" action="/admin"> 
+                        <div class="inputBlock">
+                            <label>
+                                Логин:<br>
+                                <input type="text" placeholder="Введите Ваш логин">
+                            </label>
+                        </div>
+                        <div class="inputBlock">
+                            <label>
+                                Пароль:<br>
+                                <input type="password" placeholder="Введите Ваш пароль">
+                            </label>
+                        </div>
+                        <div class="inputBlock">
+                            <input id="submit" type="submit">        
+                        </div>
+                    </form>
+                </section>
             </div>
         </main>
     </body>
