@@ -1,6 +1,6 @@
 {
     "user1": {
-        "loghin": "admin", 
+        "login": "admin", 
         "password": "admin"
     }, 
     "user2": {
