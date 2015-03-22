@@ -8,8 +8,8 @@
 body {
     font: 14px Open Sans, Helvetica, Arial, sans-serif;
     font-weight: 300;
-    
     background: #544;
+    min-width: 860px;
 }
 
 .content {
@@ -20,6 +20,11 @@ body {
     width: 100%;
     height: 438px;
     z-index: 1;
+}
+
+.top img {
+    height: 100%;
+    width: 100%;
 }
 
 .bottom {
@@ -102,63 +107,84 @@ body {
 
 .references {    
     padding: 20px 0;
-    height: 200px;
     margin-bottom: 50px;
+}
+.references table {
+    margin: 0 auto;
+    width: 30%;
+}
+.references table tr {
+    height: 100px;
+    text-align: center;
+}
+.references table tr td{
+    width: 30%;
+    min-width: 80px;
+}
+.round{
+    border-radius:50%;
+}
+.round:hover{
+    cursor: pointer;
+}
+
+
+.messager-left, .messager-right {
+    width: 35%;
+    height: 200px;
+    padding: 50px 0;
 }
 
 .messager-left {
-    width: 28%;
     float: left;
-    height: 200px;
-    margin: 50px 0;
-    margin-left: 18%;
+    padding-right: 1%;
+    padding-left: 14%;
 }
 
 .messager-right {
-    width: 28%;
     float: right;
-    height: 200px;
-    margin: 50px 0;
-    margin-right: 18%;
+    padding-left: 1%;
+    padding-right: 14%;
 }
 
 .message {    
     resize: none;
-    width: 330px;
+    width: calc(100% - 4px);
 }
 
 .messager-left textarea {
-    height: 122px;
+    height: calc(68% - 4px);
 }
 
 .messager-right textarea {
-    height: 150px;
+    height: calc(100% - 68px);
     text-align: left;
     padding: 34px;
 }
 
 .nameinput {
-    width: 132px;
-    height: 26px;
+    width: calc(40% - 4px);
+    height: calc(16% - 4px);
+    float: right;
 }
 
 .mailinput {
-    width: 178px;
-    height: 26px;
+    width: calc(60% - 4px);
+    height: calc(16% - 4px);
+    float: right;
 }
 
 .submit {
-    width: 340px;
-    height: 30px;
+    width: calc(100% - 4px);
+    height: calc(16% - 4px);
 }
 
 .message, .mailinput, .nameinput, .submit {
-    margin: 4px;
+    margin: 2px;
     background-color: rgb(81, 97, 145);
     font: 15px "Open Sans", Helvetica, Arial;
-    font-weight: 300;
-    padding: 5px;    
-    color: #def;
+    font-weight: 300;  
+    color: white;
     border-width: 0px;
     border-radius: 2px;
 }

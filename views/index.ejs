@@ -10,8 +10,10 @@
 
         <div class="content">
             
-            <img class="top" src="/images/head0.jpg" ></img>
-
+            <div class="top">
+                <img src="/images/main/head0.jpg" ></img>
+            </div> 
+        
             <div class="bottom">
                 
                 <div class="circleLogo" href="#">
@@ -59,17 +61,32 @@ mechanism — not only making the whole keyboard much thinner, but also allowing
                 </div>
                 
                 <div class="references">
-                
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <img class="round" src="/images/main/vk-logo.jpg" href="#"></img>
+                            </td>
+                            
+                            <td>
+                                <img class="round" src="/images/main/facebook-logo.jpg" href="#"></img>
+                            </td>
+                            
+                            <td>
+                                <img class="round" src="/images/main/twitter-logo.jpg" href="#"></img>
+                            </td>
+                        </tr>
+                    </table>
+                    
                 </div>
 
                 <div id="form" class="gate">
 
                     <form class="messager-left" method="post" action="#" enctype="multipart/form-data">
 
-                        <div>
-                            <input class="nameinput" type="text" placeholder="Имя" name="name"/>
-                            <input class="mailinput" type="email" placeholder="Email" name="email"/>
-                        </div>
+                        <input class="mailinput" type="email" placeholder="Email" name="email"/>
+                        <input class="nameinput" type="text" placeholder="Имя" name="name"/>
+                        <div style="clear:both;"></div>
 
                         <textarea class="message" placeholder="Текст"></textarea>
                         <input class="submit" type="submit" value="Отправить"/>
@@ -78,16 +95,14 @@ mechanism — not only making the whole keyboard much thinner, but also allowing
 
                     <form class="messager-right" method="post" action="#" enctype="multipart/form-data">
 
-                        <textarea class="message" disabled="disabled">
-Наш адрес: город Санкт-Петербург, 23-линия В.О, дом 55                            
+                        <textarea class="message" disabled="disabled">Наш адрес: г.Санкт-Петербург, 23-линия В.О, дом 55                            
 
 Телефон: 8(811)123 12 12
 
-Офис: 123 23 23
-                        </textarea>
+Офис: 123 23 23</textarea>
                     </form>
 
-                    <div style="clear:both;"/>
+                    <div style="clear:both;"></div>
 
                 </div>                
             </div>
