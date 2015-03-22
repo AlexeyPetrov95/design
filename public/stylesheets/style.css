@@ -1,9 +1,172 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=cyrillic-ext,latin,latin-ext);
 
-body {
-    font-family: 'Open Sans', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-a {
-  color: #00B7FF;
+body {
+    font: 14px Open Sans, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    
+    background: #544;
+}
+
+.content {
+    width: 100%;
+}
+
+.top {
+    width: 100%;
+    height: 438px;
+    z-index: 1;
+}
+
+.bottom {
+    background: white;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.circleLogo {
+    position: absolute;
+    top: 368px;
+    left: 5%;
+    float: left;
+    border-radius: 50%;
+    width: 133px;
+    height: 43px;
+    z-index: 2;
+    text-align: center;
+    font: 30px Cursive;
+    color: #def;
+    transform: rotate(-32deg);
+    padding: 45px 0;
+    opacity: 0.702;
+}
+
+.menuItem {
+    font-size: 18px;
+    text-decoration: none;
+    color: #322;
+    margin: 0 3%;
+    margin-top: 30px;
+    margin-bottom: 23px;
+    float:right;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.menuItem:hover {
+    border-bottom-color: #7687bb;
+}
+
+.title {
+    color: #322;
+    font-size: 24px;    
+    padding: 89px 0;
+    text-align: center;    
+}
+
+.article {
+    color: #322;
+    width: 60%;
+    margin-bottom: 75px;
+    padding: 0 20%;
+    text-indent: 40px; 
+    text-align: justify;
+    font-size: 19px;
+}
+
+.gate {
+    text-align: center;
+    padding: 1px;
+}
+
+.gate button {
+    margin: 19px auto;
+    text-shadow: 1px 1px 2px #444;
+    color: white;
+    font-size: 15px;
+    padding: 9px 42px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.prices {
+    padding: 20px 0;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.references {    
+    padding: 20px 0;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.messager-left {
+    width: 28%;
+    float: left;
+    height: 200px;
+    margin: 50px 0;
+    margin-left: 18%;
+}
+
+.messager-right {
+    width: 28%;
+    float: right;
+    height: 200px;
+    margin: 50px 0;
+    margin-right: 18%;
+}
+
+.message {    
+    resize: none;
+    width: 330px;
+}
+
+.messager-left textarea {
+    height: 122px;
+}
+
+.messager-right textarea {
+    height: 150px;
+    text-align: left;
+    padding: 34px;
+}
+
+.nameinput {
+    width: 132px;
+    height: 26px;
+}
+
+.mailinput {
+    width: 178px;
+    height: 26px;
+}
+
+.submit {
+    width: 340px;
+    height: 30px;
+}
+
+.message, .mailinput, .nameinput, .submit {
+    margin: 4px;
+    background-color: rgb(81, 97, 145);
+    font: 15px "Open Sans", Helvetica, Arial;
+    font-weight: 300;
+    padding: 5px;    
+    color: #def;
+    border-width: 0px;
+    border-radius: 2px;
+}
+
+.circleLogo, .gate, .gate button {
+    background-color: rgb(118, 135, 187);
+}
+
+.circleLogo:hover, .submit:hover, .gate button:hover {
+    background: #fa7;
 }

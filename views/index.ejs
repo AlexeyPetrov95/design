@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/reset-css.css' />
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    asdasdasdass
-  </body>
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/reset-css.css' />
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+  
+    <body>   
+
+        <div class="content">
+            
+            <img class="top" src="/images/head0.jpg" ></img>
+
+            <div class="bottom">
+                
+                <div class="circleLogo" href="#">
+                    Logo
+                </div>               
+
+                <a class="menuItem" href="#form">Свяжитесь с нами</a>
+                <a class="menuItem" href="#trade">Договоры</a>
+                <a class="menuItem" href="#prices">Цены</a>
+                <a class="menuItem" href="#gallery">Галерея</a>
+                <a class="menuItem" href="#about">Главная</a>
+
+                
+                <div style="clear:both;"></div>
+                <div class="gate"></div>
+
+                <div style="clear:both;"></div>
+                
+                <div id="about" class="title">About us</div>
+
+                <div class="article">
+<p>We believe that a comfortable, full-size keyboard is essential for a great notebook experience. </p>
+<p>But to fit one into the elegantly thin new MacBook, we had to completely rethink how a keyboard is 
+engineered and constructed. To create the new keyboard, we redesigned each key and its underlying 
+mechanism — not only making the whole keyboard much thinner, but also allowing for more comfortable, precise, and responsive typing that just feels right.</p></div>
+
+                <div id="gallery" class="gate">
+                    
+                    <button href="#"> Галерея </button>
+                
+                </div>
+
+                <div id="prices" class="title">Цены</div>
+                
+                <div class="prices"></div>
+
+                <div id="trade" class="gate">
+                    
+                    <button href="#"> Договоры </button>
+                
+                </div>
+
+                <div class="title">
+                    Мы в социальных сетях
+                </div>
+                
+                <div class="references">
+                
+                </div>
+
+                <div id="form" class="gate">
+
+                    <form class="messager-left" method="post" action="#" enctype="multipart/form-data">
+
+                        <div>
+                            <input class="nameinput" type="text" placeholder="Имя" name="name"/>
+                            <input class="mailinput" type="email" placeholder="Email" name="email"/>
+                        </div>
+
+                        <textarea class="message" placeholder="Текст"></textarea>
+                        <input class="submit" type="submit" value="Отправить"/>
+
+                    </form>
+
+                    <form class="messager-right" method="post" action="#" enctype="multipart/form-data">
+
+                        <textarea class="message" disabled="disabled">
+Наш адрес: город Санкт-Петербург, 23-линия В.О, дом 55                            
+
+Телефон: 8(811)123 12 12
+
+Офис: 123 23 23
+                        </textarea>
+                    </form>
+
+                    <div style="clear:both;"/>
+
+                </div>                
+            </div>
+        </div>
+    </body>
 </html>
