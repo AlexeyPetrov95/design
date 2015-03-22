@@ -8,7 +8,6 @@
 body {
     font: 14px Open Sans, Helvetica, Arial, sans-serif;
     font-weight: 300;
-    background: #544;
     min-width: 860px;
 }
 
@@ -124,14 +123,10 @@ body {
 .round{
     border-radius:50%;
 }
-.round:hover{
-    cursor: pointer;
-}
-
 
 .messager-left, .messager-right {
     width: 35%;
-    height: 200px;
+    height: 320px;
     padding: 50px 0;
 }
 
@@ -149,38 +144,39 @@ body {
 
 .message {    
     resize: none;
-    width: calc(100% - 4px);
+    width: calc(100% - 12px);
 }
 
 .messager-left textarea {
-    height: calc(68% - 4px);
+    height: calc(68% - 12px);
 }
 
 .messager-right textarea {
-    height: calc(100% - 68px);
+    height: calc(100% - 76px);
     text-align: left;
     padding: 34px;
 }
 
 .nameinput {
-    width: calc(40% - 4px);
-    height: calc(16% - 4px);
+    width: calc(40% - 12px);
+    height: calc(16% - 12px);
     float: right;
 }
 
 .mailinput {
-    width: calc(60% - 4px);
-    height: calc(16% - 4px);
+    width: calc(60% - 12px);
+    height: calc(16% - 12px);
     float: right;
 }
 
 .submit {
     width: calc(100% - 4px);
-    height: calc(16% - 4px);
+    height: calc(16% - 12px);
 }
 
 .message, .mailinput, .nameinput, .submit {
     margin: 2px;
+    padding: 4px;
     background-color: rgb(81, 97, 145);
     font: 15px "Open Sans", Helvetica, Arial;
     font-weight: 300;  
