@@ -84,6 +84,52 @@ html, body {
 /*=====================админка==============*/
 aside{
     height: 100%;
-    width: 350px;
-    border: 1px solid red;
+    width: 285px;
+    background-color: rgba(118, 135, 187, 0.8);
+}
+
+#nav{
+    width: 100%;
+    height: 100%;
+}
+
+#logo{
+    height: 100px !important;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    line-height: 100px !important;
+}
+
+#nav td {
+    float: left;
+    height: 58px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    line-height: 58px;
+}
+
+#logoName{
+    height: 100%;
+    font-size: 24px;
+}
+
+.link {
+    color: white;
+    padding-left: 20px;   
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    height: 100%;
+}
+
+#nav td:hover{
+    background: #fa7;
+}
+
+#nav a{
+    text-decoration: none;
+    height: 100%;   
 }
