@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/reset-css.css' />
     <link rel='stylesheet' href='/stylesheets/admin.css' />
+    <link rel='stylesheet' type="text/css" href='/javascripts/bootstrap/css/bootstrap.min.css'>
   </head>
   <body>
+    <script src="/javascripts/angular/angular.min.js" ></script>
     <aside>
         <table id ="nav">
             <td id="logo">
@@ -41,5 +43,8 @@
             </td>
         </table>
     </aside>
+    <main>
+       <p> {{2+2}} </p>
+    </main>
   </body>
 </html>
