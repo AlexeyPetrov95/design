@@ -8,7 +8,7 @@ var session = require('express-session');
 
 var routes = require('./routes/index');
 var admin = require('./routes/admin');
-
+var photoHeader = require('./routes/ajax/photoHeader');
 var app = express();
 
 // view engine setup
@@ -31,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/', admin);
+app.use('/', photoHeader);
 
 
 app.use(function(req, res, next) {

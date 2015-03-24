@@ -2,46 +2,46 @@
 <html>
     <head>
         <title><%= title %></title>
+        <script src= "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <link rel='stylesheet' href='/stylesheets/reset-css.css' />
         <link rel='stylesheet' href='/stylesheets/style.css' />
+        <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src= "/javascript/toggle.js"></script>
     </head>
   
     <body>   
 
         <div class="content">
             
-            <div class="top">
-                <img src="/images/main/head0.jpg" ></img>
-            </div> 
+            <div class="backtop">
+                <img id="top">           
+                    <div class="navigation">
+                        <a class="menuItem" href="#about">Главная</a>
+                        <a class="menuItem" href="#gallery">Галерея</a>
+                        <a class="menuItem" href="#prices">Цены</a>
+                        <a class="menuItem" href="#trade">Договоры</a>
+                        <a class="menuItem" href="#form">Свяжитесь с нами</a>
+
+                    </div>
+
+                    <div class="gate"></div>
+
+                    <div class="circleLogo" href="#">
+                        Logo
+                    </div>               
+
+                    <div style="clear:both;"></div>
+                </img> 
+            </div>
         
             <div class="bottom">
-                
-                <div class="circleLogo" href="#">
-                    Logo
-                </div>               
-
-                <a class="menuItem" href="#form">Свяжитесь с нами</a>
-                <a class="menuItem" href="#trade">Договоры</a>
-                <a class="menuItem" href="#prices">Цены</a>
-                <a class="menuItem" href="#gallery">Галерея</a>
-                <a class="menuItem" href="#about">Главная</a>
-
-                
-                <div style="clear:both;"></div>
-                <div class="gate"></div>
-
-                <div style="clear:both;"></div>
-                
+            
                 <section id="about">
                     <header class="title">
-                        About us                    
+                        О фирме                   
                     </header>
-                    <article class="article">
-<p>We believe that a comfortable, full-size keyboard is essential for a great notebook experience. </p>
-<p>But to fit one into the elegantly thin new MacBook, we had to completely rethink how a keyboard is 
-engineered and constructed. To create the new keyboard, we redesigned each key and its underlying 
-mechanism — not only making the whole keyboard much thinner, but also allowing for more comfortable, precise, and responsive typing that just feels right.</p>
-                    </article>
+                    <article class="article">Весь текст, графика, пользовательские интерфейсы, визуальные интерфейсы, фотографии, названия товарных знаков, логотипы, звуки, музыка, изображения и программные коды (совместно именуемые «Содержимое»), включая, помимо прочего, дизайн, структуру, выбор, координацию, внешний вид, общий стиль и расположение данного Содержимого, входящего в состав Сайта, принадлежат, управляются и лицензируются компанией Apple и защищены правилами торговли, авторским правом, патентным правом и законодательством о товарных знаках, а также другими правами, связанными с интеллектуальной собственностью, и законодательством о недобросовестной конкуренции.
+<p>Кроме тех случаев, когда это явно указано в настоящих Условиях использования, никакая часть Сайта и Содержимого не может быть скопирована, воспроизведена, опубликована, размещена в Интернете, отправлена по почте, публично продемонстрирована, закодирована, переведена, передана или распространена любым способом (включая «дублирование») на любой другой компьютер, сервер, веб-сайт или любой другой носитель для публикации, распространения или любого коммерческого предприятия без предварительного явно выраженного письменного согласия компании Apple.</p></article>
                 </section>
                 
                 <div id="gallery" class="gate">    
@@ -70,18 +70,18 @@ mechanism — not only making the whole keyboard much thinner, but also allowing
                         <table>
                             <tr>
                                 <td>
-                                    <a href="#">
-                                        <img class="round" src="/images/main/vk-logo.jpg"></img>
+                                    <a href="http:\\vk.com">
+                                        <img class="round" src="/images/main/logo/vk-logo.jpg"></img>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="#">                                
-                                        <img class="round" src="/images/main/facebook-logo.jpg"></img>
+                                    <a href="http:\\facebook.com">                                
+                                        <img class="round" src="/images/main/logo/facebook-logo.jpg"></img>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="#">
-                                        <img class="round" src="/images/main/twitter-logo.jpg"></img>                                           </a>
+                                    <a href="http:\\twitter.com">
+                                        <img class="round" src="/images/main/logo/twitter-logo.jpg"></img>                                           </a>
                                 </td>
                             </tr>
                         </table>

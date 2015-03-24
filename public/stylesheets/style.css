@@ -1,27 +1,36 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=cyrillic-ext,latin,latin-ext);
 
-* {
-    margin: 0;
-    padding: 0;
+html, body, .content {
+    height : 100%;
+    width : 100%;
 }
-
 body {
     font: 14px Open Sans, Helvetica, Arial, sans-serif;
     font-weight: 300;
     min-width: 860px;
 }
 
-.content {
+.backtop {
+    background-color: black;    
+}
+#top {
     width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: .9s;
+}
+.navigation, .backtop {
+    width: 100%;
+    height: 100%;
 }
 
-.top {
-    width: 100%;
-    height: 438px;
-    z-index: 1;
+.navigation {
+    position: relative;
+    top: -97%;
 }
 
-.top img {
+#headphotoBack {
+    position: relative;
     height: 100%;
     width: 100%;
 }
@@ -34,14 +43,13 @@ body {
 }
 
 .circleLogo {
-    position: absolute;
-    top: 368px;
+    position: relative;
     left: 5%;
-    float: left;
+    top: calc(-100% - 76px);
     border-radius: 50%;
     width: 133px;
     height: 43px;
-    z-index: 2;
+    z-index: 3;
     text-align: center;
     font: 30px Cursive;
     color: #def;
@@ -51,13 +59,13 @@ body {
 }
 
 .menuItem {
+    position: relative;
     font-size: 18px;
     text-decoration: none;
-    color: #322;
+    color: white;
     margin: 0 3%;
     margin-top: 30px;
     margin-bottom: 23px;
-    float:right;
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
 }
@@ -68,7 +76,7 @@ body {
 
 .title {
     color: #322;
-    font-size: 24px;    
+    font-size: 26px;    
     padding: 89px 0;
     text-align: center;    
 }
@@ -144,6 +152,7 @@ body {
 
 .message {    
     resize: none;
+    overflow: hidden;
     width: calc(100% - 12px);
 }
 
