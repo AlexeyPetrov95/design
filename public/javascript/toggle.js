@@ -1,19 +1,3 @@
-/*window.onload = function(){
-    
-    
-    $.ajax({
-        url: "/getPhotoHeader",
-        success : function(){
-            alert("fdsf");
-        }
-    })
-    
-    
-    
-    
-}*/
-
-
 $(document).ready(function(){
      $.ajax({
         url: "/getPhotoHeader",
@@ -37,5 +21,10 @@ $(document).ready(function(){
             }, 6000);
         }
     });
-    
+
+    $(".navigation").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'), top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
 })

@@ -14,6 +14,11 @@
         <div class="content">
             
             <div class="backtop">
+                
+                <% for (var i in dataImg){ %>
+                    <img src="<%- dataImg[i] %>" style="display:none"/>
+                <% } %>
+                
                 <img id="top">           
                     <div class="navigation">
                         <a class="menuItem" href="#about">Главная</a>
@@ -21,7 +26,6 @@
                         <a class="menuItem" href="#prices">Цены</a>
                         <a class="menuItem" href="#trade">Договоры</a>
                         <a class="menuItem" href="#form">Свяжитесь с нами</a>
-
                     </div>
 
                     <div class="gate"></div>
