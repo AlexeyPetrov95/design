@@ -17,6 +17,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 2;
+    opacity: 0.5;
     transition: .9s;
 }
 .navigation, .backtop {
@@ -27,6 +28,7 @@ body {
 .navigation {
     position: relative;
     top: -97%;
+    text-align: right;
 }
 
 #headphotoBack {
@@ -63,7 +65,7 @@ body {
     font-size: 18px;
     text-decoration: none;
     color: white;
-    margin: 0 3%;
+    margin: 0 2%;
     margin-top: 30px;
     margin-bottom: 23px;
     padding-bottom: 5px;
@@ -71,7 +73,7 @@ body {
 }
 
 .menuItem:hover {
-    border-bottom-color: #7687bb;
+    border-bottom-color: white;
 }
 
 .title {

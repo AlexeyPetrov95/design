@@ -29,9 +29,8 @@ $(document).ready(function(){
             var show = function(){
                 i = ++i % data.length;
                 back.style.content = 'url("'+data[i]+'")';
-                back.style.opacity = '1';        
+                back.style.opacity = '0.5';        
             }
-
             setInterval(function(){      
                 setTimeout(hide, 0);
                 setTimeout(show, 700);  
