@@ -1,205 +1,102 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=cyrillic-ext,latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300);
 
-html, body, .content {
+html, body{
     height : 100%;
     width : 100%;
 }
-body {
-    font: 14px Open Sans, Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    min-width: 860px;
-}
 
-.backtop {
-    background-color: black;    
-}
-#top {
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    opacity: 0.5;
-    transition: .9s;
-}
-.navigation, .backtop {
-    width: 100%;
-    height: 100%;
-}
-
-.navigation {
-    position: relative;
-    top: -97%;
-    text-align: right;
-}
-
-#headphotoBack {
-    position: relative;
+header{
     height: 100%;
     width: 100%;
+    background: url(/images/main/header/head.jpg) no-repeat;
+    background-size: cover;
 }
 
-.bottom {
-    background: white;
-    width: 100%;
-    z-index: 1;
-    text-align: center;
+.header{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.35);   
 }
 
-.circleLogo {
-    position: relative;
-    left: 5%;
-    top: calc(-100% - 76px);
-    border-radius: 50%;
-    width: 133px;
-    height: 43px;
-    z-index: 3;
-    text-align: center;
-    font: 30px Cursive;
-    color: #def;
-    transform: rotate(-32deg);
-    padding: 45px 0;
-    opacity: 0.702;
-}
-
-.menuItem {
-    position: relative;
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-    margin: 0 2%;
-    margin-top: 30px;
-    margin-bottom: 23px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
-}
-
-.menuItem:hover {
-    border-bottom-color: white;
-}
-
-.title {
-    color: #322;
-    font-size: 26px;    
-    padding: 89px 0;
-    text-align: center;    
-}
-
-.article {
-    color: #322;
-    width: 60%;
-    margin-bottom: 75px;
-    padding: 0 20%;
-    text-indent: 40px; 
-    text-align: justify;
-    font-size: 19px;
-}
-
-.gate {
-    text-align: center;
-    padding: 1px;
-}
-
-.gate button {
-    margin: 19px auto;
-    text-shadow: 1px 1px 2px #444;
-    color: white;
-    font-size: 15px;
-    padding: 9px 42px;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-
-.prices {
-    padding: 20px 0;
-    height: 300px;
-    margin-bottom: 50px;
-}
-
-.references {    
-    padding: 20px 0;
-    margin-bottom: 50px;
-}
-.references table {
+nav, nav ul{
+    width: 494px;
+    height: 50px;
     margin: 0 auto;
-    width: 30%;
+    line-height: 50px;
 }
-.references table tr {
-    height: 100px;
+
+nav ul li {
+    float: left;   
     text-align: center;
-}
-.references table tr td{
-    width: 30%;
-    min-width: 80px;
-}
-.round{
-    border-radius:50%;
-}
-
-.messager-left, .messager-right {
-    width: 35%;
-    height: 320px;
-    padding: 50px 0;
-}
-
-.messager-left {
-    float: left;
-    padding-right: 1%;
-    padding-left: 14%;
-}
-
-.messager-right {
-    float: right;
-    padding-left: 1%;
-    padding-right: 14%;
-}
-
-.message {    
-    resize: none;
-    overflow: hidden;
-    width: calc(100% - 12px);
-}
-
-.messager-left textarea {
-    height: calc(68% - 12px);
-}
-
-.messager-right textarea {
-    height: calc(100% - 76px);
-    text-align: left;
-    padding: 34px;
-}
-
-.nameinput {
-    width: calc(40% - 12px);
-    height: calc(16% - 12px);
-    float: right;
-}
-
-.mailinput {
-    width: calc(60% - 12px);
-    height: calc(16% - 12px);
-    float: right;
-}
-
-.submit {
-    width: calc(100% - 4px);
-    height: calc(16% - 12px);
-}
-
-.message, .mailinput, .nameinput, .submit {
-    margin: 2px;
-    padding: 4px;
-    background-color: rgb(81, 97, 145);
-    font: 15px "Open Sans", Helvetica, Arial;
-    font-weight: 300;  
     color: white;
-    border-width: 0px;
-    border-radius: 2px;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 300;
+    padding: 0 17px;
+    font-size: 13px;
 }
 
-.circleLogo, .gate, .gate button {
-    background-color: rgb(118, 135, 187);
+nav ul li span{
+    padding-bottom: 3px;   
 }
 
-.circleLogo:hover, .submit:hover, .gate button:hover {
-    background: #fa7;
+nav ul li span:hover{
+    border-bottom: 2px solid white;
+}
+
+.selected{
+    border-bottom: 2px solid white;
+}
+
+#logo{
+    width:300px;
+    height: 100%;
+    float: left;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}   
+
+.navigation{
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}   
+
+.aboutUs{
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  right: 68px;
+  margin: auto; 
+  min-width: 437px; 
+  max-height: 100%;
+  height: 42%;
+  background: rgba(0,0,0,0.65);
+  width: 42%;
+}
+
+.aboutUs div{
+    width: 100%;
+}
+
+.title{
+    height: 60px;
+    color: white;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height:70px;
+    border-bottom: 1px solid white; 
+}
+
+.aboutUs hr{
+    width: 100%;
+}
+
+.aboutUs span{
+    padding-left: 40px;
 }

@@ -5,117 +5,30 @@
         <script src= "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <link rel='stylesheet' href='/stylesheets/reset-css.css' />
         <link rel='stylesheet' href='/stylesheets/style.css' />
-        <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-        <script src= "/javascript/toggle.js"></script>
     </head>
-  
     <body>   
-
-        <div class="content">
-            
-            <div class="backtop">
+        <header>
+            <div class="header">
                 
-                <% for (var i in dataImg){ %>
-                    <img src="<%- dataImg[i] %>" style="display:none"/>
-                <% } %>
-                
-                <img id="top">           
-                    <div class="navigation">
-                        <a class="menuItem" href="#about">Главная</a>
-                        <a class="menuItem" href="#gallery">Галерея</a>
-                        <a class="menuItem" href="#prices">Цены</a>
-                        <a class="menuItem" href="#trade">Договоры</a>
-                        <a class="menuItem" href="#form">Свяжитесь с нами</a>
-                    </div>
-
-                    <div class="gate"></div>
-
-                    <div class="circleLogo" href="#">
-                        Logo
-                    </div>               
-
-                    <div style="clear:both;"></div>
-                </img> 
             </div>
-        
-            <div class="bottom">
-            
-                <section id="about">
-                    <header class="title">
-                        О фирме                   
-                    </header>
-                    <article class="article">Весь текст, графика, пользовательские интерфейсы, визуальные интерфейсы, фотографии, названия товарных знаков, логотипы, звуки, музыка, изображения и программные коды (совместно именуемые «Содержимое»), включая, помимо прочего, дизайн, структуру, выбор, координацию, внешний вид, общий стиль и расположение данного Содержимого, входящего в состав Сайта, принадлежат, управляются и лицензируются компанией Apple и защищены правилами торговли, авторским правом, патентным правом и законодательством о товарных знаках, а также другими правами, связанными с интеллектуальной собственностью, и законодательством о недобросовестной конкуренции.
-<p>Кроме тех случаев, когда это явно указано в настоящих Условиях использования, никакая часть Сайта и Содержимого не может быть скопирована, воспроизведена, опубликована, размещена в Интернете, отправлена по почте, публично продемонстрирована, закодирована, переведена, передана или распространена любым способом (включая «дублирование») на любой другой компьютер, сервер, веб-сайт или любой другой носитель для публикации, распространения или любого коммерческого предприятия без предварительного явно выраженного письменного согласия компании Apple.</p></article>
-                </section>
-                
-                <div id="gallery" class="gate">    
-                    <a href="#">
-                        <button> Галерея </button>
-                    </a>
+            <div class="navigation">
+                <div class="container">
+                    <nav>
+                        <ul class="menu">
+                            <li class="item"><span class="selected">ГЛАВНАЯ</span></li>
+                            <li class="item"><span>ПРОЕКТЫ</span></li>
+                            <li class="item"><span>ЦЕНЫ</span></li>
+                            <li class="item"><span>ДОГОВОРЫ</span></li>
+                            <li class="item"><span>КОНТАКТЫ</span></li>
+                        </ul>
+                    </nav>
                 </div>
-
-                <section id="prices">
-                    <header class="title">Цены</header>
-                    <div class="prices"></div>
-                </section>
-                
-                <div id="trade" class="gate">
-                    <a href="#">
-                        <button> Договоры </button>
-                    </a>
-                </div>
-
-                <section>
-                    <header class="title">
-                        Мы в социальных сетях
-                    </header>
-                
-                    <div class="references">
-                        <table>
-                            <tr>
-                                <td>
-                                    <a href="http:\\vk.com">
-                                        <img class="round" src="/images/main/logo/vk-logo.jpg"></img>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="http:\\facebook.com">                                
-                                        <img class="round" src="/images/main/logo/facebook-logo.jpg"></img>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="http:\\twitter.com">
-                                        <img class="round" src="/images/main/logo/twitter-logo.jpg"></img>                                           </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </section>
-
-                <section>
-                    <div id="form" class="gate">
-
-                        <form class="messager-left" method="post" action="#" enctype="multipart/form-data">
-                            <input class="mailinput" type="email" placeholder="Email" name="email"/>
-                            <input class="nameinput" type="text" placeholder="Имя" name="name"/>
-                            <div style="clear:both;"></div>
-
-                            <textarea class="message" placeholder="Текст"></textarea>
-                            <input class="submit" type="submit" value="Отправить"/>
-                        </form>
-
-                        <form class="messager-right" method="post" action="#" enctype="multipart/form-data">
-
-                            <textarea class="message" disabled="disabled">Наш адрес: г.Санкт-Петербург, 23-линия В.О, дом 55                            
-
-Телефон: 8(811)123 12 12
-
-Офис: 123 23 23</textarea>
-                        </form>
-                        <div style="clear:both;"></div>
-                    </div>                
-                </section>
             </div>
-        </div>
+                
+            <div class="aboutUs">
+                <div class="title"><span>О нас</span></div>
+                <div class="information"></div>
+            </div>
+        </header>
     </body>
 </html>
