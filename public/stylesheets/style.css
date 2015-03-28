@@ -100,3 +100,16 @@ nav ul li span:hover{
 .aboutUs span{
     padding-left: 40px;
 }
+
+.information div{
+    margin-left: 40px;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 40px;
+    width: 85%;
+    height: 100%;
+    color: white;
+    line-height: 20px;
+    
+}
