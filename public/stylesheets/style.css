@@ -16,6 +16,22 @@ header{
     background-size: cover;
 }
 
+/*.overlay{
+	background: transparent url(/images/main/header/overlay-03.png);
+	opacity: 0.5;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}*/
+
 .header{
     width:100%;
     height: 100%;
@@ -119,38 +135,50 @@ nav ul li span:hover{
 }
 
 .bottom{
- 
     position: absolute;
     bottom: 0;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     right: 0;
     left: 0;
     margin: auto; 
 }
 
-img:hover{
+.bottom img:hover{
 	background: rgba(0,0,0,0.5);
 }
 
 main .title{
-    width: 100%;
-    height: 125px;
-    color: #7e7e7e;
-    font-size: 28px;
-    font-weight: 300;
+	width: 432px;
+	height: 125px;
+	color: #7e7e7e;
+	font-size: 28px;
+	font-weight: 300;
+	margin: 0 auto;
+	position: relative;
 }
 
 .text{
-    width: 200px;
-    margin: 0 auto;
-    padding-top: 28px;
+	width: 200px;
+	margin: 0 auto;
+	line-height: 125px;
+	text-align: center;
 }
 
 .line{
-    width: 100px;
-    height: 3px;
-    background: black;
+	width: 100px;
+	height: 3px;
+	background: rgba(41,171,226, 1);
+	position: absolute;
+	top: 63px;
+}
+
+.line1{
+	left: 0;
+}
+
+.line2{
+	right: 0;
 }
 
 .gallery{
@@ -217,4 +245,14 @@ main .title{
 	font-family: 'Roboto' sans-serif;
     font-weight: 100;
 	font-size: 13px;
+}
+
+.information{
+	width: 100%;
+	height: 300px;
+}
+
+.chip img{
+	height: 100px;
+	width:100px;
 }
