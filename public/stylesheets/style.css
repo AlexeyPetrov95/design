@@ -250,7 +250,8 @@ main .title{
 
 .abs{
 	width: 100%;
-	height: 200px;
+	height: 210px;
+	padding-top:10px;
 }
 
 .chip img{
@@ -300,7 +301,7 @@ main .title{
 .socialMargin a {
 	display: block;
 	float: left;
-	margin: 0px 33px;
+	margin: 0px 76px;
 	position: relative;
 	border-radius: 50%;
 	z-index: 200;
@@ -315,7 +316,7 @@ main .title{
 
 
 .socialMargin{
-	width: 523px;
+	width: 788px;
 	margin: 0 auto;
 	height: 100px;
 	padding: 100px 0;
@@ -343,5 +344,62 @@ main .title{
 
 footer{
 	width: 100%;
-	height: 400px;
+	height: 600px;
+	background: rgb(27,27,27);
+}
+
+footer .titleFooter{
+	width: 705px;
+	height: 125px;
+	color: #7e7e7e;
+	font-size: 28px;
+	font-weight: 300;
+	margin: 0 auto;
+	position: relative;
+	font-family: 'Roboto' sans-serif;
+    font-weight: 100;
+}
+
+.textFooter{
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+form{
+	width: 441px;
+	height: 296px;
+	position: relative;
+	top: 83px;
+	left:58px;
+}
+
+form input{
+	width: 160px;
+	background: rgba(0,0,0, 0.3);
+	border: 1px solid rgb(126, 126, 119);
+	float: left;
+	margin-left: 26px;
+	padding: 14px 14px;
+	border-radius: 2px;
+}
+
+form textarea{
+	width: 400px;
+	border: 1px solid rgb(126, 126, 119);
+	height: 165px;
+	margin-left: 26px;
+	margin-top: 8px;
+	background: rgba(0,0,0, 0.3);
+	resize: none;
+}
+
+#button{
+	margin-left: 26px;
+	margin-top: 8px;
+	width: 406px;
+	color: white;
+	background: rgba(41,171,226, 0.6);
+
 }
