@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+html, body {   
+    width:  100%;
+    height: 100%; 
+}
+
+
+/* ============= форма авторизации ============*/
+#main {   
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    background: url("/images/admin/background.jpg") no-repeat; 
+}
+
+#blockForForm{
+    background: rgba(0, 0, 0, 0.85);
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#main #blockForForm{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.titleForm{
+    width: 100%;
+    height: 43px;
+    text-align: center;
+    border-bottom: 1px solid;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#formBlock{
+    width: 100%;
+    height: 429px;
+    position: relative;
+}
+
+#formBlock #form{
+    margin: 0 auto;
+    width: 215px;
+    padding-top: 62px;
+}
+
+.inputBlock{   
+    padding-top: 42px;
+}
+
+#form .inputBlock input{
+    padding: 8px; 
+    width: 200px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border-radius: 4px;
+    border: none;
+}
+
+#submit{
+    width: 218px !important;
+    border: none;
+    height: 35px;
+    background: #fa7;
+    color: white;   
+}
+/* ==========================================*/

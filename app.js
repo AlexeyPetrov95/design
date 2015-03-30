@@ -11,6 +11,17 @@ var admin = require('./routes/admin');
 var photoHeader = require('./routes/ajax/photoHeader');
 var app = express();
 
+knex = require('knex')({
+    client: 'mysql',
+    connection: {
+        host     : '127.0.0.1',
+        user     : 'root',
+        password : 'alexas',
+        database : 'test',
+        charset  : 'utf8'
+    }
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
