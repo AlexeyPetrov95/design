@@ -5,9 +5,14 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
+var KnexSessionStore = require('connect-session-knex')(session);
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+
 
 var routes = require('./routes/index');
 var admin = require('./routes/admin');
+var auth = require('./routes/auth.js');
 var photoHeader = require('./routes/ajax/photoHeader');
 var app = express();
 
@@ -16,10 +21,15 @@ knex = require('knex')({
     connection: {
         host     : '127.0.0.1',
         user     : 'root',
-        password : 'alexas',
-        database : 'test',
+        password : 'tutu123',
+        database : 'design',
         charset  : 'utf8'
     }
+});
+
+var storeSession = new KnexSessionStore({
+	knex: knex,
+	tablename: 'session'
 });
 
 // view engine setup
@@ -33,16 +43,30 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(session ({
+	resave: false,
+    saveUninitialized: false, 
     secret: 'awesomeServer',
     key: 'sid',
-    cookie: { httpOnly: true, maxAge: null }
+    cookie: { httpOnly: true, maxAge: null },
+	store: storeSession
 }));
         
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/', auth);
+app.use(function(req, res, next){
+	if (req.session.authorized){
+		next();	
+	} else {
+		var err = new Error('Permission denied');
+		err.status = 403;
+		next(err);	
+	}
+})
 app.use('/', admin);
 app.use('/', photoHeader);
+
 
 
 app.use(function(req, res, next) {
