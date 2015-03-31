@@ -6,9 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var KnexSessionStore = require('connect-session-knex')(session);
-var passport = require('passport');
-var LocalStrategy = require('passport-local').Strategy;
-
 
 var routes = require('./routes/index');
 var admin = require('./routes/admin');

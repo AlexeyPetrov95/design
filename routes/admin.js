@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var data = require('../system/system.json');
 var passport = require('passport');
 
 
