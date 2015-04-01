@@ -5,26 +5,26 @@
         <link rel='stylesheet' href='/stylesheets/reset-css.css' />
         <link rel='stylesheet' href='/stylesheets/admin.css' />
         <link rel='stylesheet' type="text/css" href='/javascripts/bootstrap/css/bootstrap.min.css'>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src='/javascripts/admin/about_management.js'></script>
+        <script src='/javascripts/admin/edit_about.js'></script>
     </head>
     <body>
-        <script src="/javascripts/admin/user_management.js"></script>
         <header>
             <div id='logo'>Logo</div>
-            <div id='title'>Админка</div>
+            <div id='title'></div>
             <div style='clear:both;'/>
         </header>
 
         <aside>
             <a href='/user_management'>
-                <div class="backgr_selected">
-                    <div class="menu_item" id="selected_item">Управление пользователями</div>
-                </div>
+                <div class="menu_item">Управление пользователями</div>
             </a>
             <a href='/pro'>            
                 <div class="menu_item">Проекты</div>
             </a>
             <a href='/about_management'>
-                <div class="menu_item">О нас</div>
+                <div class="menu_item" id="selected_item">О нас</div>
             </a>
             <a href='/user_management'>
                 <div class="menu_item">Вид сайта</div>
@@ -39,25 +39,8 @@
             <div id="footer"></div>
         </aside>
         
-        <main>
-            <div class='content'>
-            <table>
-                <thead>
-                    <th>Имя</th>
-                    <th>Пароль</th>
-                    <th>Действия</th>
-                </thead>
-                <tbody>
-                    <% for(var i in data) { %>
-                    <tr>
-                        <td><%= data[i].user %></td>
-                        <td><%= data[i].password %></td>
-                        <td><%= data[i].id %></td>                    
-                    </tr>
-                    <% } %>
-                </tbody>
-            </table>
-            </div>
+        <main>            
+            <div class='info' id="text_edit" onclick='edit()'><%= about_info.description %></div> 
         </main>
         
         <div style='clear:both;'/>
