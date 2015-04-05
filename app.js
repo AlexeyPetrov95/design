@@ -18,7 +18,7 @@ knex = require('knex')({
     connection: {
         host     : '127.0.0.1',
         user     : 'root',
-        password : 'alexas',
+        password : 'tutu123',
         database : 'design',
         charset  : 'utf8'
     }
@@ -53,14 +53,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/', auth);
 app.use(function(req, res, next){
+    console.log(req.session.authorized);
 	if (req.session.authorized){
-		next();	
+		next();
 	} else {
+        console.log(req.session.authorized)
 		var err = new Error('Permission denied');
 		err.status = 403;
 		next(err);	
 	}
 })
+
 app.use('/', admin);
 app.use('/', photoHeader);
 

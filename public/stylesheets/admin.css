@@ -1,13 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300);
+
 
 /*=====================админка==============*/
 html, body {
     width: 100%;
     height: 100%;
+    font: 16px "Roboto";
+    font-weight: 100;
 }
 
 header{
-    position: fixed;
     width: 100%;
     height: 180px;
 }
@@ -24,19 +26,17 @@ header{
 
 #logo {
     float: left;
-    width: 30%;
+    width: 280px;
 }
 
 #title {
     border-bottom: 3px solid #559ad9;
-    float: right;
-    width: 70%;
+    width: 100%;
 }
 
 aside {
     float: left;
-    position: fixed;
-    width: 30%;
+    width: 280px;
     height: calc(100% - 180px);    
     top: 180px;
     background: #559ad9;
@@ -44,9 +44,9 @@ aside {
 
 .menu_item, #selected_item, #logo {    
     color: white;
-    font: 20px "Open Sans";
-    font-weight: 400;
-    background: #445;
+    font: 16px "Roboto";
+    font-weight: 100;
+    background: rgb(36, 36, 36);
     border-bottom: 1px solid white;
     transition: .5s;
 }
@@ -62,7 +62,7 @@ aside {
 }
 
 #footer{    
-    background: #445;
+    background:rgb(36, 36, 36);
     height: 100%;
 }
 
@@ -84,6 +84,76 @@ main th {
     background: #445;
     text-align: center;
     vertical-align: middle;
-    font: 15px Open Sans, Arial;
+    font: 15px 'Roboto';
     color:white;
+}
+
+
+
+/* -------------------------------- view admin style only ---------------------*/
+#mainSection{
+    float: left;
+    width: calc(100% - 280px);
+    height: 100%;
+}   
+.sq{
+    width: 220px;
+    height: 220px;
+    float: left;
+    margin: 23px 23px;
+    background: #559ad9;
+    color: white;
+    text-align: center;
+    line-height: 220px;
+    font-size: 18px;
+}
+
+#centerMainSection{
+    width: 800px;
+    height:100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.sq:hover{
+    background: white;
+    border: 1px solid #559ad9;
+    color: #559ad9;
+}
+
+#add{
+    display: none;
+    width: 57px;
+    height: 57px;
+    float: right;
+    position: relative;
+    bottom: 10px;
+    right: 39px;
+    background: url('/images/design/plus.svg');
+}
+
+input{
+    opacity: 0;
+    height: 57px;
+    width: 57px;
+}
+
+#black{
+    background: rgba(0,0,0,0.7);
+    height: 220px;
+    width: 220px;
+    position: relative;   
+}
+
+#close{
+    background:url(/images/design/close.svg) no-repeat;
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    top:78px;
+    bottom:0;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    z-index:100;
 }

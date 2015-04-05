@@ -1,5 +1,11 @@
 $(document).ready(function(){
-	
+    $.ajax({
+        url:'/view/custom/header/user',
+        success: function(data){
+            $('header').css('background', 'url('+data+')');
+        }
+    }),
+    
 	$('.animation').hide();
 	$(".bottom").on("click","a", function (event) {
         event.preventDefault();
@@ -30,6 +36,5 @@ $(document).ready(function(){
 	}, function(){
 		$(this).find('.projectTitle').show();
 		$(this).find('.animation').hide();
-	});
-	
+	});	
 });

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/reset-css.css' />
+        <link rel='stylesheet' href='/stylesheets/admin.css' />
+        <link rel='stylesheet' type="text/css" href='/javascripts/bootstrap/css/bootstrap.min.css'>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src='/javascripts/admin/view_admin.js'></script>
+    </head>
+    <body>
+        <header>
+            <div id='logo'>Logo</div>
+            <div id='title'>
+                <%= title %>
+                <div id='add'>
+                    <form type="POST" action="admin/upload">
+                        <input type='file'>
+                        <input type='submit'>
+                    </form>
+                </div>
+            </div>
+        
+            <div style='clear:both;'/>
+        </header>
+        <%- include ../layouts/navigation.ejs %>
+        <section id="mainSection">
+            <div id="centerMainSection">
+                 <% for (var i in data){ %>
+                    <div class="sq" id=<%-data[i]%>> <%-data[i]%> </div>
+                <% } %>   
+                <div class="sq">Projects</div>
+            </div>
+        </section>
+        
+    </body>
+</html>
